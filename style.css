@@ -1,0 +1,175 @@
+/* GOOGLE FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: url(/Images/home-background.png);
+    background-repeat: no-repeat;
+    /* background-position: 100%; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.login__container {
+    height: 530px;
+    max-width: 750px;
+    min-width: 650px;
+    margin: 0px auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 120px 0px;
+}
+
+.left {
+    padding: 45px 60px 45px 30px;
+    width: 40%;
+    height: 100%;
+    background-color: #2874f0;
+    color: white;
+    background-image: url(/Images/login_img.png);
+    background-repeat: no-repeat;
+    background-position: center 85%;
+    box-sizing: border-box;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.left>h1 {
+    font-weight: 500;
+}
+
+.left>p {
+    color: #dbdbdb;
+}
+
+
+/* RIGHT  */
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding: 45px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.input-field {
+    position: relative;
+    margin: 10px 0px 20px 0px;
+}
+
+.input-field>input {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    color: #444;
+    padding: 10px;
+    padding-left: 0px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.input-field>input:focus {
+    outline: none;
+    border-bottom: 1px solid #2874f0;
+}
+
+.input-field>label {
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 10px;
+    transition: 0.2s;
+}
+
+.input-field>input:focus~label,
+.input-field>input:valid~label {
+    top: -10px;
+    left: 0px;
+    font-size: 13px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.terms {
+    margin: 10px 0px;
+}
+
+.terms>p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: #5c5c5c;
+}
+
+.terms>p>span {
+    color: #2874f0;
+    cursor: pointer;
+}
+
+.login__btn {
+    margin: 5px 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.login__btn>button,
+.request__otp>button {
+    padding: 16px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    background-color: #fb641b;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    cursor: pointer;
+}
+
+.right>p {
+    text-align: center;
+    font-weight: 500;
+    color: #5c5c5c;
+}
+
+.request__otp {
+    margin-bottom: 10px;
+}
+
+.request__otp>button {
+    padding: 14px 120px;
+    color: black;
+    background-color: white
+}
+
+.new__user {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.new__user>p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2874f0;
+    cursor: pointer;
+}
+
+.psd__container {
+    display: flex;
+}
